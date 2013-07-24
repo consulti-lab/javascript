@@ -1,0 +1,23 @@
+<!--
+Este exemplo mostra como mudar o valor de um elemento HTML utilizando JavaScript
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alterando Conteudo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function mudarTexto(){ //função chamada quando houver um clique no botão
+                document.title="Titulo Alterado"; // mudando o título da página 
+                var y = document.getElementsByTagName("p"); // a variável y recebe o array (vetor) de tags p
+                y[0].innerHTML="texto novo!"; // muda o valor do conteúdo do paragráfo selecionado
+                alert(y[0].innerHTML); // imprime o conteúdo da posição 0 do array (vetor)
+            }
+        </script>
+        
+    </head>
+    <body>
+        <p id="texto"> Texto antigo!</p>
+        <button type="button" value="botao" onclick="mudarTexto()">Mudar</button>
+    </body>
+</html>

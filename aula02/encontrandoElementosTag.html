@@ -1,0 +1,26 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encontrando elementos Tag</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <p>Hello World!</p>
+        <div id="main">
+            <p>The DOM is very useful.</p>
+            <p>This example demonstrates the <b>getElementsByTagName</b> method</p>
+        </div>
+        
+        <script type="text/javascript">
+            var x = document.getElementById("main"); //variável x recebe o elemento com id="main"
+            var y = document.getElementsByTagName("p"); // variável y recebe array(vetor) de tags p
+            alert("O Primeiro paragrafo dentro da div eh: "+y[1].innerHTML); // imprime a posição 1 do vetor (array)
+            
+        </script>
+        
+    </body>
+</html>
