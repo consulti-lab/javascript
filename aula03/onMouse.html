@@ -1,0 +1,26 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Mouse </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript">
+            function imagemFacebook() {
+                document.getElementById("imagem").src="mail.png";
+            }
+
+            function imagemMail() {
+                document.getElementById("imagem").src="facebook.png";
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <img id="imagem" src="facebook.png" onmouseover="imagemFacebook()" 
+                 onmouseout="imagemMail()">
+        </div>
+    </body>
+</html>

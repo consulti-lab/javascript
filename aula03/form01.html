@@ -1,0 +1,22 @@
+<HTML>
+<HEAD>
+	<TITLE>CHECAGEM DE DADOS</TITLE>
+	<script>
+		function requer(texto){ // função chamada quando o foco eh retirado do campo "nome"
+			if (texto == ""){ // verifica se o campo está vazio
+				alert("Favor preencher o campo!"); // mostra uma mensagem na tela
+				document.form1.nome.focus(); // leva o foco até o campo "nome"
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<form name="form1">
+	<pre>
+	Digite seu Nome: <input type="text" name="nome" onChange="this.value=this.value.toUpperCase()" 
+               				onFocus="this.select()" onBlur="requer(this.value)">
+</form>
+</body>
+
+</html>

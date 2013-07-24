@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Criando Elementos </title>
+</head>
+
+<body>
+
+<div id="div1">
+<p id="p1">Este eh um paragrafo</p>
+<p id="p2">Este eh outro paragrafo</p>
+</div>
+
+    <script type="text/javascript">
+		var x=document.createElement("p"); // cria um elemento "p"
+		var no=document.createTextNode("Este eh novo!!!"); // cria um nó para o elemento x
+		x.appendChild(no); // inseri o nó no elemento x
+		var element = document.getElementById("div1"); // a variável element recebe o valor do elemento com id="div1" 
+		element.appendChild(x); // inseri um nó abaixo de element
+</script>
+
+</body>
+</html>

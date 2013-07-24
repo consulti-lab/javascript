@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div onmousedown="mDown(this)" onmouseup="mUp(this)" 
+             style="background-color:#D94A38;width:90px;height:20px;
+             padding:40px;">Click Me</div>
+
+        <script>
+            function mDown(obj) // função chamada pelo evento onmousedown
+            {
+                obj.style.backgroundColor = "#1ec5e5"; // muda o estilo da div
+                obj.innerHTML = "Release Me"; // muda o texto da div
+            }
+
+            function mUp(obj) // função chamada pelo evento onmouseup
+            {
+                obj.style.backgroundColor = "#D94A38"; // muda o estilo da div
+                obj.innerHTML = "Thank You" // muda o texto da div
+            }
+        </script>
+
+    </body>
+</html> 

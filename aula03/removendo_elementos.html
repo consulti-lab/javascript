@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Removendo Elementos </title>
+</head>
+
+<body>
+
+<div id="div1">
+<p id="p1">Este eh um paragrafo</p>
+<p id="p2">Este eh outro paragrafo</p>
+</div>
+
+<script>
+	var pai=document.getElementById("div1"); // variável "pai" recebe o elemento com id="div1"
+	var filho=document.getElementById("p1"); // variável "filho" recebe o elemento com id="p1"
+	pai.removeChild(filho); // função remove o nó filho
+</script>
+
+</body>
+</html>
